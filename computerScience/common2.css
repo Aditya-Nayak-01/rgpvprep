@@ -1,0 +1,617 @@
+@font-face {
+    font-family: popins;
+    src: url(/RgpvPrep2/Poppins/Poppins-ExtraLight.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: popins;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    --background-color: #E8ECEB;
+    --background-color2:white;
+    /* --text-color:white;  */
+    --text-color: #eae7dc;
+    /* --text-color2:#E8ECEB; */
+    /* --text-color2:#111111; */
+    --text-color2: black;
+    /* --extra-color:#8EE4AF; */
+    /* --extra-color:#83d9fe; */
+    --extra-color: #8fddfe;
+    --extra-color3: #eae7dc;
+    /* --extra-color:#7FBBD3; */
+}
+
+
+/* NAVBAR STARTS */
+#navbar {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    background-color: var(--extra-color);
+    /* border-radius: .7rem; */
+    /* box-shadow: 2px 0px 2px 2px #000 inset; */
+}
+
+#navbar .nav-left {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar .logo img {
+    width: 7vw;
+}
+
+#navbar .join {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar .login a {
+    text-decoration: none;
+    border-radius: .2rem;
+    color: var(--text-color2);
+    transition: all .2s ease-in-out;
+    padding: .2rem;
+    font-weight: 700;
+}
+
+#navbar .login a:hover {
+    color: var(--extra-color);
+    background-color: var(--text-color2);
+}
+
+/* NAVBAR ENDS */
+
+#main{
+    position: relative;
+}
+
+/* NAVIGATION STARTS */
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    /* min-height: 100vh; */
+}
+
+.semesterParent {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.semesterContainer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--text-color2);
+    width: 100%;
+}
+
+.semesterBox {
+    text-align: center;
+    border: 1px solid var(--text-color);
+    width: 100%;
+    padding: 1.5rem;
+    cursor: pointer;
+    font-size: 1.3vw;
+    transition: all .1s ease-in-out;
+    background-color: var(--text-color2);
+}
+
+.semesterBox:hover {
+    background-color: var(--extra-color);
+}
+
+.semesterBox a {
+    text-decoration: none;
+    color: var(--extra-color);
+    transition: all .1s ease-in-out;
+    font-weight: 900;
+}
+.active2{
+    background-color: var(--extra-color);
+}
+
+.active2 a {
+    color: var(--text-color2);
+}
+
+.semesterBox:hover.semesterBox a {
+    color: var(--text-color2);
+}
+
+
+
+/* NAVIGATION ENDS */
+
+.subjectParent{
+    width: 100%;
+}
+
+#main2 {
+    position: relative;
+    width: 90%;
+}
+
+.subjectContainer {
+    display: flex;
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+}
+
+.subjectContainer .subject {
+    width: 100%;
+    background-color: var(--text-color2);
+    color: var(--extra-color);
+    padding: 1.5rem;
+    border-left: 1px solid var(--text-color);
+    text-align: center;
+    font-size: 1.1vw;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+    display: inline-block;
+}
+
+.subjectContainer .subject:hover {
+    background-color: var(--extra-color);
+    color: var(--text-color2);
+}
+
+.subjectContainer .active {
+    background-color: var(--extra-color);
+    color: var(--text-color2);
+}
+
+.navigationBtn {
+    position: absolute;
+    top: 7rem;
+}
+
+.navigationBtn i {
+    background-color: var(--extra-color);
+    color: var(--extra-color2);
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.navigationBtn button {
+    border: none;
+    background-color: transparent;
+}
+
+.syllabusContainer {
+    position: relative;
+    overflow-x: clip;
+    width: 100%;
+    top: 11rem;
+}
+
+.syllabus {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    background-color: var(--text-color2);
+    color: var(--extra-color3);
+}
+
+.syllabus h1 {
+    color: var(--extra-color);
+}
+
+.syllabus ol {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.syllabus:not(.active) {
+    top: 0;
+    left: -100%;
+}
+
+.notesContainer {
+    position: relative;
+    overflow-x: clip;
+    width: 100%;
+    top: 50rem;
+}
+
+.notes {
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    background-color: var(--text-color2);
+    color: var(--extra-color3);
+}
+
+.notes:not(.active) {
+    top: 0;
+    left: -100%;
+}
+
+.ytContainer{
+    position: relative;
+    overflow-x: clip;
+    width: 100%;
+    top: 90rem;
+}
+
+.yt{
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    background-color: var(--text-color2);
+    color: var(--extra-color3);
+}
+.yt:not(.active){
+    top: 0;
+    left: -100%;
+}
+.download-box {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.265);
+    padding: 1rem;
+    font-size: 1.1vw;
+    transition: all .2s ease-in-out;
+}
+
+.download-head {
+    display: flex;
+    gap: 2rem;
+}
+
+.download-box:hover {
+    color: var(--extra-color);
+}
+
+.download-btns {
+    display: flex;
+    gap: 1rem;
+}
+
+.download-btns a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 900;
+    padding: .3rem;
+    border-radius: .3rem;
+    transition: all .2s ease-in-out;
+}
+
+.download-box:hover .download-btns a {
+    background-color: var(--extra-color);
+    color: var(--text-color2);
+}
+
+/* SECTION STARTS */
+
+.section7{
+    position: absolute;
+    background:linear-gradient(to bottom ,var(--background-color2 ) 50% ,var(--text-color2) 50%) ;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    bottom: -1400%;
+}
+
+.message{
+    height: 50vh;
+    background-color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 70%;
+    border-radius: 2rem;
+}
+.message-box{
+    display: flex;
+    width: 35%;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+
+.fa-paper-plane{
+    background-color: var(--extra-color);
+    padding: .7rem;
+    border-radius: 50%;
+    position: absolute;
+    right: 1%;
+    transition: all .2s ease-in-out;
+}
+
+.fa-paper-plane:hover{
+    transform: rotate3d(1,1,1,30deg);
+}
+
+input{
+    width: 200%;
+    border-radius: 2rem;
+    padding: 1rem;
+    border: none;
+    background-color: var(--text-color2);
+}
+
+.section7 button{
+    background-color: var(--text-color2);
+    color: var(--extra-color);
+    border: none;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+/* SECTION7 ENDS */
+
+/* FOOTER STARTS */
+
+footer{
+    position: absolute;
+    padding: 1rem;
+    bottom: -1725%;
+    background-color: var(--text-color2);
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 3rem;
+    color:var(--extra-color);
+    width: 100%;
+    border-bottom: 1px dashed var(--extra-color);
+    flex-wrap: wrap;
+}
+
+footer p{
+    text-align: center;
+    color:var(--extra-color);
+}
+
+.footer1{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.2vw;
+}
+.footer1 .logo{
+    width: 11vw;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.footer1 .fa-brands{
+    padding: 1rem;
+    border: 1px solid var(--extra-color3);
+    color: var(--extra-color3);
+    border-radius: 50%;
+    margin: .2rem;
+    transition: all .2s ease-in-out;
+}
+
+.footer1 .fa-brands:hover{
+    background-color: var(--extra-color3);
+    color: var(--text-color2);
+}
+
+.footer2{
+    display: flex;
+    padding: 1rem;
+    border-left:  1px dashed var(--extra-color);
+    border-right:  1px dashed var(--extra-color);
+}
+
+.footer ul{
+    list-style: none;
+    color: var(--text-color);
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    font-size: 2.5vw;
+    
+}
+
+.footer a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.2vw;
+    transition: all .1s ease-in-out;
+}
+
+.footer a:hover{
+    color: var(--extra-color);
+}
+
+.footer3 ul{
+    display: flex;
+    gap: .5rem;
+}
+
+.footer3 li{
+    font-size:1.2vw ;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+.footer3 li:hover{
+    color: var(--extra-color);
+}
+/* FOOTER ENDS */
+
+
+@keyframes next1 {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes next2 {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: 0%;
+    }
+}
+
+@keyframes prev1 {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes prev2 {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 0%;
+    }
+}
+
+
+/* MEDIA QUERRIES STARTS */
+
+@media screen and (max-width:1160px){
+    footer{
+        bottom:-1822%;
+    }
+}
+
+@media screen and (max-width:900px){
+    footer{
+        bottom: -1802%;
+    }
+}
+
+@media screen and (max-width:800px){
+    footer{
+        bottom:-1790%;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    #navbar .join{
+        display: none;
+    }
+    
+    .founder h1{
+        font-size: 3rem;
+    }
+
+    .message{
+        bottom: -435%;
+    }
+    footer{
+        bottom: -1775%;
+    }
+
+}
+
+@media screen and (max-width: 600px ){
+    
+    .message{
+        height: 40vh;
+        font-size: 2.3vw;
+        gap: 1rem;
+    }
+    .message-box{
+        width: 45%;
+    }
+    footer{
+        bottom: -1765%;
+    }
+}
+
+@media screen and (max-width:500px){
+    footer{
+        bottom: -1750%;
+    }
+
+    .footer{
+        justify-content: center;
+    }
+    .footer1,.footer2,.footer3{
+        width: 90%;
+        padding: 0rem;
+    }
+
+    .footer2{
+        border-bottom: 1px dashed var(--extra-color);
+        border-left: none;
+        border-right: none;
+        border-top: 1px dashed var(--extra-color);
+        padding: 0rem;
+    }
+
+    .footer ul{
+        padding: 1rem;
+    }
+
+}
+
+
+
+@media screen and (max-width:450px){
+ 
+    .message-box{
+        width: 55%;
+    }
+
+    footer{
+        bottom: -1725%;
+    }
+}
+
+
+
