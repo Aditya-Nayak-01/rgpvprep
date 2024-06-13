@@ -516,6 +516,8 @@ footer p{
     }
 }
 
+
+
 /* MEDIA QUERRIES STARTS */
 
 @media screen and (max-width:1160px){
@@ -533,6 +535,9 @@ footer p{
 @media screen and (max-width:800px){
     footer{
         bottom:-1790%;
+    }
+    .download-box{
+        font-size: 1.4vw;
     }
 }
 
@@ -552,10 +557,16 @@ footer p{
     footer{
         bottom: -1775%;
     }
+    .notesContainer{
+        top: 51rem;
+    }
+    .syllabus{
+        height: 85vh;
+    }
 
 }
 
-@media screen and (max-width: 600px ){
+@media screen and (max-width: 600px){
     
     .message{
         height: 40vh;
@@ -567,6 +578,22 @@ footer p{
     }
     footer{
         bottom: -1765%;
+    }
+    .notesContainer{
+        top: 52rem;
+    }
+    .syllabus{
+        height: 90vh;
+    }
+    .ytContainer{
+        top: 93rem;
+    }
+
+    .yt{
+        height: 90vh;
+    }
+    .download-box{
+        font-size: 1.7vw;
     }
 }
 
@@ -594,6 +621,12 @@ footer p{
     .footer ul{
         padding: 1rem;
     }
+    .notes{
+        height: 78vh;
+    }
+    .download-box{
+        font-size: 1.7vw;
+    }
 
 }
 
@@ -606,8 +639,160 @@ footer p{
     }
 
     footer{
-        bottom: -1725%;
+        bottom: -1751%;
     }
+    .notesContainer{
+        top:51.2rem ;
+    }
+    .syllabus{
+        height:91vh ;
+    }
+    .navigation h1{
+        font-size: 1.2rem;
+    }
+    .ytContainer{
+        top: 82rem;
+    }
+
+    .yt{
+        height: 90vh;
+    }
+    .notes{
+        height: 72vh;
+    }
+    .download-box{
+        font-size: 1.7vw;
+    }
+   
 }
 
 
+@media screen and (max-width:390px){
+    .syllabus{
+        height: 104vh;
+    }
+    .notesContainer{
+        top: 57rem;
+    }
+    .ytContainer{
+        top: 90rem;
+    }
+
+    .yt{
+        height: 90vh;
+    }
+    footer{
+        bottom: -1752%;
+    }
+    .download-box{
+        font-size: 1.7vw;
+    }
+}
+
+@media screen and (max-width:360px){
+    .syllabus{
+        height: 110vh;
+    }
+    .notesContainer{
+        top: 58rem;
+    }
+}
+
+@media screen and (min-height:700px){
+    .syllabus{
+        height:97vh ;
+    }
+    .notesContainer{
+        top: 58rem;
+    }
+    .notes{
+        height: 65vh;
+    }
+
+    .ytContainer{
+        top: 90rem;
+    }
+
+    .yt{
+        height: 86vh;
+    }
+    footer{
+        bottom: -1786%;
+    }
+    .section7{
+        bottom: -1434%;
+    }
+}
+
+@media screen and (min-height:770px){
+    .syllabus{
+        height: 84vh;
+    }
+    .notesContainer{
+        top: 57rem;
+    }
+    .ytContainer{
+        top: 94rem;
+    }
+    .section7{
+        bottom: -1480%;
+    }
+    footer{
+        bottom: -1835%;
+    }
+}
+
+@media screen and (min-height:880px){
+    .notesContainer{
+        top: 60rem;
+    }
+    .notes{
+        height: 58vh;
+    }
+    .ytContainer{
+        top: 94rem;
+    }
+}
+
+@media screen and (min-height:1000px){
+    .syllabus{
+        height: 53vh;
+    }
+    .notesContainer{
+        top: 50rem;
+    }
+    .notes{
+        height: 50vh;
+    }
+    .ytContainer{
+        top: 90rem;
+    }
+}
+
+@media screen and (min-height:1100px){
+    .syllabus{
+        height: 45vh;
+    }
+
+    .notesContainer{
+        top: 46rem;
+    }
+
+    .notes{
+        height: 48vh;
+    }
+
+    .ytContainer{
+        top: 85rem;
+    }
+}
+
+@media screen and (min-height:1250px){
+    .syllabus{
+        height: 38vh;
+    }
+
+    .notes{
+        height: 40vh;
+    }
+}
