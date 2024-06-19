@@ -154,6 +154,16 @@
         height: 35vh;
         font-size: .60rem;
     }
+       .footer1{
+        font-size: 1.5vw;
+    }
+    .footer1 .fa-brands{
+        font-size: 2vw;
+        padding: .7rem;
+    }
+    .footer ul{
+        font-size: 3.5vw;
+    }
 }
 
 @media screen and (max-width: 600px ){
@@ -234,6 +244,16 @@
         width: 45%;
     }
 
+    .footer1{
+        font-size: 1.6vw;
+    }
+    .footer1 .fa-brands{
+        font-size: 2.8vw;
+        padding: .7rem;
+    }
+    .footer ul{
+        font-size: 3.5vw;
+    }
     
 }
 
