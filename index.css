@@ -382,13 +382,9 @@ body::-webkit-scrollbar{
     width: 100%;
     display: flex;
     gap: 2rem;
-    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
     background-color: var(--extra-color);
-    /* background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
     color: white;
     padding: 2rem;
 }
@@ -402,8 +398,16 @@ body::-webkit-scrollbar{
 .founder-wrapper{
     display: flex;
     width: 100%;
-    gap: 1rem;
+    justify-content: center;
 }
+
+.founder-box1 ,.founder-box2{
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    justify-content: space-evenly;
+}
+
 
 .founder-box{
     width: 15vw;
