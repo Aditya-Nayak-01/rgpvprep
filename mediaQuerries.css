@@ -323,9 +323,14 @@
     .message-box{
         width: 55%;
     }
+     .founder-wrapper{
+        flex-direction: column;
+        align-items:center;
+        gap: 0.9rem;
+    }
     .founder-box1,.founder-box2{
         flex-direction: column;
-/*         justify-content: center; */
+        justify-content: center;
         align-items: center;
     }
     .founder-box{
