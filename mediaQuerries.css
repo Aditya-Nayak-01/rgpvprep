@@ -154,7 +154,7 @@
         height: 35vh;
         font-size: .60rem;
     }
-       .footer1{
+    .footer1{
         font-size: 1.5vw;
     }
     .footer1 .fa-brands{
@@ -164,7 +164,7 @@
     .footer ul{
         font-size: 3.5vw;
     }
-     .works h1{
+    .works h1{
         font-size: 5.5vw;
     }
 }
@@ -246,7 +246,6 @@
     .message-box{
         width: 45%;
     }
-
     .footer1{
         font-size: 1.6vw;
     }
@@ -257,9 +256,10 @@
     .footer ul{
         font-size: 3.5vw;
     }
-     .works h1{
-        font-size: 6.5vw;
+    .works h1{
+        font-size: 7.5vw;
     }
+
     
 }
 
@@ -290,7 +290,17 @@
         height: 33vh;
         font-size: .5rem;
     }
-     .works h1{
+    .footer1{
+        font-size: 2vw;
+    }
+    .footer1 .fa-brands{
+        font-size: 3.4vw;
+        padding: .7rem;
+    }
+    .footer ul{
+        font-size: 3.5vw;
+    }
+    .works h1{
         font-size: 7.5vw;
     }
 
@@ -298,17 +308,18 @@
 
 @media screen and (max-width:420px){
     .works h1{
-        font-size:7.5vw;
+        font-size: 7.5vw;
     }
-     .footer1{
-        font-size: 2.5vw;
+
+    .footer1{
+        font-size: 2vw;
     }
     .footer1 .fa-brands{
         font-size: 3.4vw;
         padding: .7rem;
     }
     .footer ul{
-        font-size: 4.5vw;
+        font-size: 3.5vw;
     }
     .autoImageContainer .info{
         font-size: 2.5vw;
@@ -322,7 +333,6 @@
     .message-box{
         width: 55%;
     }
-  
     .founder-box1,.founder-box2{
         flex-direction: column;
         justify-content: center;
@@ -335,7 +345,7 @@
     }
     .founder{
         height: 100vh;
-        overflow-y:auto;
+        overflow-y: auto;
     }
 
     .founder h1{
