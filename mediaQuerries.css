@@ -349,6 +349,11 @@
     .ytBox{
         height: 33vh;
     }
+    .founder-box1,.founder-box2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
