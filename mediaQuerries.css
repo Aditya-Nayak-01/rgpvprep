@@ -324,7 +324,7 @@
     }
     .founder-box1,.founder-box2{
         flex-direction: column;
-        justify-content: center;
+/*         justify-content: center; */
         align-items: center;
     }
     .founder-box{
