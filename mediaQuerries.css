@@ -146,7 +146,6 @@
     }
     .founder-wrapper{
         flex-direction: column;
-        align-items:center;
         gap: 0.9rem;
     }
 
