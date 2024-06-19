@@ -271,6 +271,16 @@
     .works h1{
         font-size:7.5vw;
     }
+     .footer1{
+        font-size: 2vw;
+    }
+    .footer1 .fa-brands{
+        font-size: 3.4vw;
+        padding: .7rem;
+    }
+    .footer ul{
+        font-size: 3.5vw;
+    }
     .autoImageContainer .info{
         font-size: 2.5vw;
         font-weight: 900;
