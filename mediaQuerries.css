@@ -268,6 +268,9 @@
 }
 
 @media screen and (max-width:420px){
+    .works h1{
+        font-size:7.5vw;
+    }
     .autoImageContainer .info{
         font-size: 2.5vw;
         font-weight: 900;
