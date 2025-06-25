@@ -27,9 +27,9 @@ RGPVPREP is built to simplify the academic journey for RGPV university students 
 ## 💡 Key Features
 - 📂 20+ subjects per branch
 - 🔗 Curated YouTube playlists for coding languages
-- 📘 Downloadable academic books
-- 🧑‍🏫 Mentors and community support 
-- 📥 Free access — No login required for study materials
+- 📘 Downloadable academic books (free)
+- 🧑‍🏫 Mentors and community support (not available)
+- 📥 Free access — No login required for study materials 
 
 ## 📩 Contact
 📧 rgpvprep@gmail.com  
