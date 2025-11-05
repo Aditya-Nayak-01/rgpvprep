@@ -108,17 +108,18 @@ body::-webkit-scrollbar{
     width: 7vw;
 }
 
-#navbar .join{
+/* #navbar .join{
     display: flex;
     gap: 1rem;
     justify-content: center;
     align-items: center;
-}
+} */
 
 #navbar .nav-right{
     display: flex;
-    gap: 1rem;
-    justify-content: space-between;
+    flex-direction: row;
+    gap: .4rem;
+    justify-content: space-evenly;
     align-items: center;
 }
 
