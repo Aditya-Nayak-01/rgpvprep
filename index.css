@@ -36,18 +36,21 @@ body::-webkit-scrollbar{
     /* --text-color2:#111111; */
     --text-color2:black;
     /* --text-color2:#6440FB; */
-    
     /* --extra-color:#8EE4AF; */
     /* --extra-color:#83d9fe; */
-    --extra-color:#8fddfe;
-    
-    /* --extra-color:rgb(20, 3, 66);  */
 
+
+
+    /* --extra-color:#8fddfe; */
+    /* --extra-color:#4fa7a7; */
+    --extra-color:#2269a3;
+    
+
+
+    /* --extra-color:rgb(20, 3, 66);  */
     --extra-color3:#eae7dc;
     /* --extra-color:#7FBBD3; */
 }
-
-
 
 
 
@@ -87,6 +90,7 @@ body::-webkit-scrollbar{
     text-decoration: none;
     padding: 1rem;
 } */
+
 /* Sidebar Base */
 .aside {
   position: fixed;
@@ -216,7 +220,22 @@ body::-webkit-scrollbar{
 
 
 /* NAVBAR STARTS */
+
+@media (max-width: 780px){
+    #navbar .login1 a{
+        display: none;
+    }
+}
+@media (max-width: 390px){
+    #navbar .login2 a{
+        display: none;
+    }
+}
+
 #navbar{
+    /* position: sticky; */
+    /* top: 0; */
+    /* z-index: 90; */
     display: flex;
     gap: 1rem;
     justify-content: space-between;
@@ -525,7 +544,7 @@ body::-webkit-scrollbar{
 
 /* PAGE4 STARTS */
 
-.founder{
+/* .founder{
     height: 95vh;
     width: 100%;
     display: flex;
@@ -622,7 +641,7 @@ body::-webkit-scrollbar{
 
 .info-box h3{
     font-weight: 900;
-}
+} */
 /* PAGE4 ENDS */
 
 /* PAGE5 STARTS */
